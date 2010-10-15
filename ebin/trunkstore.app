@@ -1,0 +1,11 @@
+{application,trunkstore,
+             [{description,"Trunk Store Backend - Authentication and Routing"},
+              {vsn,"0.1"},
+              {registered,[]},
+              {applications,[kernel,stdlib,amqp]},
+              {mod,{trunkstore_app,[]}},
+              {env,[]},
+              {modules,[logger,props,trunkstore,trunkstore_app,
+                        trunkstore_deps,trunkstore_sup,ts_auth,
+                        ts_call_handler,ts_carrier,ts_couch,ts_credit,ts_e911,
+                        ts_responder,ts_route,ts_t38,whistle_api]}]}.
